@@ -31,6 +31,19 @@ From **Clients → New client**, set:
 Once created, open the client to find tabs for **Calls**, **Agents**, **Phone
 numbers**, **Embeds**, and **Info**.
 
+## Industry templates
+
+The **industry** you choose isn't just a label — it drives **industry templates**.
+When you create a new [agent](agents/index.md) for the client, the template for that
+industry seeds sensible starting points: a fitting greeting, a relevant set of
+[intake questions](agents/configuration.md#intake-questions), and a head start on the
+knowledge base.
+
+Templates are only a starting point — every field stays fully editable, so you can
+tailor the agent from a sensible default instead of a blank page. Changing the
+client's industry affects the defaults offered to **new** agents, not ones you've
+already built.
+
 ## Client status
 
 A client moves through a small set of states:
