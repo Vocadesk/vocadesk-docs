@@ -80,20 +80,25 @@ extra:
 nav:
   - Home: index.md
   - Getting started: getting-started.md
+  - Accounts & onboarding: accounts.md
   - Core concepts: concepts.md
   - Clients: clients.md
   - Agents:
       - agents/index.md
       - Configuring an agent: agents/configuration.md
+      - Voices & languages: agents/voices.md
       - Conversation design: agents/conversation-design.md
       - Call forwarding & transfers: agents/call-forwarding.md
+      - Testing your agent: agents/testing.md
   - Phone numbers: phone-numbers.md
   - Web calls & embeds: embeds.md
   - Calls: calls.md
   - Billing: billing.md
   - Settings: settings.md
+  - Administration: admin.md
   - For developers:
       - How Vocadesk works: architecture.md
+      - Embedding on your website: embed-integration.md
   - Troubleshooting: troubleshooting.md
   - Glossary: glossary.md
   - Tags: tags.md
