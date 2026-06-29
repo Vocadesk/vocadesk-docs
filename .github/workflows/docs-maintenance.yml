@@ -1,0 +1,87 @@
+name: AI docs maintenance
+
+# Keeps the documentation evolving with the product, as automatically as possible.
+#
+# Triggers:
+#   - weekly schedule        → a routine "freshness & gaps" audit
+#   - manual (workflow_dispatch) with an optional `context` note describing what changed
+#   - repository_dispatch     → fired by product repos (vocaback2 / vocafront2 / …) when
+#                               they merge a change to a documented area (see MAINTENANCE.md)
+#
+# It runs Claude Code against this repo, applies doc updates, and opens a Pull Request
+# for human review (it never pushes straight to main).
+#
+# SETUP (one-time):
+#   1. Add repo secret  ANTHROPIC_API_KEY.
+#   2. Settings → Actions → General → Workflow permissions:
+#      enable "Allow GitHub Actions to create and approve pull requests".
+# Without the API key the job exits cleanly (no-op), so this file is safe to merge now.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      context:
+        description: "What changed / what to focus on (optional)"
+        required: false
+        type: string
+  repository_dispatch:
+    types: [docs-update]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  maintain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for API key
+        id: gate
+        run: |
+          if [ -n "${{ secrets.ANTHROPIC_API_KEY }}" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::ANTHROPIC_API_KEY not set — skipping AI maintenance. See docs-maintenance.yml header."
+          fi
+
+      - name: Build the maintenance prompt
+        if: steps.gate.outputs.enabled == 'true'
+        run: |
+          {
+            cat .github/docs-maintenance-prompt.md
+            echo ""
+            echo "## Context for this run"
+            echo "Trigger: ${{ github.event_name }}"
+            echo "${{ inputs.context || github.event.client_payload.context || 'Routine weekly freshness & gaps audit.' }}"
+          } > /tmp/prompt.md
+
+      - name: Run Claude Code
+        if: steps.gate.outputs.enabled == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt_file: /tmp/prompt.md
+
+      - name: Validate any changes
+        if: steps.gate.outputs.enabled == 'true'
+        run: |
+          python -m pip install -r requirements.txt
+          python scripts/check_docs.py
+
+      - name: Open a pull request with the updates
+        if: steps.gate.outputs.enabled == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: docs/ai-maintenance
+          title: "docs: AI maintenance update"
+          commit-message: "docs: AI maintenance update"
+          body: |
+            Automated documentation update proposed by the AI maintenance workflow.
+
+            Trigger: `${{ github.event_name }}`. Review for accuracy before merging.
+          labels: documentation, automated
