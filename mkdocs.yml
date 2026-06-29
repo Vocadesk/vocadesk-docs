@@ -1,6 +1,6 @@
 site_name: Vocadesk Documentation
 site_description: Guides and reference for the Vocadesk AI voice-agent platform.
-site_url: https://vocadesk.github.io/vocadesk-docs/
+site_url: https://docs.vocadesk.com/
 repo_url: https://github.com/Vocadesk/vocadesk-docs
 repo_name: Vocadesk/vocadesk-docs
 edit_uri: edit/main/docs/
@@ -79,11 +79,21 @@ extra:
 
 nav:
   - Home: index.md
+  - Getting started: getting-started.md
   - Core concepts: concepts.md
+  - Clients: clients.md
   - Agents:
       - agents/index.md
       - Configuring an agent: agents/configuration.md
       - Conversation design: agents/conversation-design.md
       - Call forwarding & transfers: agents/call-forwarding.md
+  - Phone numbers: phone-numbers.md
+  - Web calls & embeds: embeds.md
+  - Calls: calls.md
+  - Billing: billing.md
+  - Settings: settings.md
+  - For developers:
+      - How Vocadesk works: architecture.md
+  - Troubleshooting: troubleshooting.md
   - Glossary: glossary.md
   - Tags: tags.md
