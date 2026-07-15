@@ -29,12 +29,14 @@ from simplest to most powerful. You pick one per agent on the agent page.
 |---|---|---|
 | **Questions & forwarding** | Straight intake plus simple "if X, transfer" rules. | Existing agents already using it (legacy). |
 | **Questions & conditions** | Intake plus instructions that fire only when a topic comes up. | Everyone — the default for new agents. |
-| **Decision tree** | Fully scripted, branching conversations. | Super-admin users. |
+| **Decision tree** | Fully scripted, branching conversations. | Operators a super admin has enabled it for. |
 
 !!! info "Defaults and availability"
     New agents start in **Questions & conditions**. **Questions & forwarding** is a
     legacy mode kept only for agents that already use it, so their setup is preserved.
-    **Decision tree** is limited to super-admin users.
+    **Decision tree** is off by default; a super admin enables it per operator
+    (Super Admin dashboard → Operators → Decision tree toggle), and it then appears
+    in the mode switcher for every agent under that operator.
 
 ## Questions & forwarding (simple)
 
@@ -76,8 +78,9 @@ yes/no condition or an action (say something, collect a field, transfer, answer 
 knowledge, or end). It replaces standard intake entirely and gives you precise
 control over every branch.
 
-Decision tree is super-admin only and suits complex, highly-regulated, or
-heavily-scripted call flows.
+Decision tree suits complex, highly-regulated, or heavily-scripted call flows. A
+super admin must enable it for your operator before it appears in the mode
+switcher below.
 
 ## Switching modes
 
