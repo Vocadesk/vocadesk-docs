@@ -1,0 +1,27 @@
+name: Deploy docs.callcat.ai proxy
+
+# docs.callcat.ai is a Cloudflare Worker route (callcat.ai zone, already on
+# Cloudflare) that forwards every request to docs.vocadesk.com — same idiom
+# as app.callcat.ai -> the vocafront2-prod Cloudflare Pages project. GitHub
+# Pages stays the single source of content; nothing is duplicated.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "cloudflare/docs-proxy/**"
+      - ".github/workflows/deploy-cloudflare-proxy.yml"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy Worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: cloudflare/docs-proxy
+          command: deploy

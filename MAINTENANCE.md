@@ -1,6 +1,6 @@
 # Keeping the docs in sync with the product
 
-The goal: documentation evolves with Vocadesk as automatically as possible, while a
+The goal: documentation evolves with callcat.ai (former vocadesk) as automatically as possible, while a
 human still approves every change.
 
 ## The loop

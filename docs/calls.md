@@ -49,7 +49,7 @@ Each call captures:
 
 ## Post-call analysis
 
-Shortly after a call ends, Vocadesk adds an automatic analysis:
+Shortly after a call ends, callcat.ai (former vocadesk) adds an automatic analysis:
 
 - **Summary** — a short, readable recap of the conversation.
 - **Sentiment** — overall caller sentiment (positive, neutral, or negative).

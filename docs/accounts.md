@@ -26,7 +26,7 @@ teammates share it.
 
 ## Signing in
 
-Vocadesk supports two sign-in methods, and both lead to the same dashboard:
+callcat.ai (former vocadesk) supports two sign-in methods, and both lead to the same dashboard:
 
 - **Email & password** — register with an email and password, then log in.
 - **Single sign-on** — sign in with your connected identity provider; your session is

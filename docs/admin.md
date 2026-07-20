@@ -20,7 +20,7 @@ help_key: admin.overview
 
 # Administration & roles
 
-Vocadesk has three roles. Most people are `user`s; `admin` and `super_admin` unlock
+callcat.ai (former vocadesk) has three roles. Most people are `user`s; `admin` and `super_admin` unlock
 progressively more.
 
 ## Roles

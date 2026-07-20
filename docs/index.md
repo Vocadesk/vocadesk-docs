@@ -1,6 +1,6 @@
 ---
-title: Vocadesk Documentation
-summary: What Vocadesk is, who it's for, and how this documentation is organized.
+title: callcat.ai (former vocadesk) Documentation
+summary: What callcat.ai (former vocadesk) is, who it's for, and how this documentation is organized.
 tags:
   - getting-started
 keywords:
@@ -10,9 +10,9 @@ keywords:
   - documentation
 ---
 
-# Vocadesk Documentation
+# callcat.ai (former vocadesk) Documentation
 
-**Vocadesk** is a platform for businesses to deploy **AI voice agents** that answer
+**callcat.ai (former vocadesk)** is a platform for businesses to deploy **AI voice agents** that answer
 inbound phone calls, take web calls from a button on their website, and hand off to
 a human when needed. You configure an agent's persona, voice, knowledge, and the
 questions it should ask, then review every call's recording, transcript, and

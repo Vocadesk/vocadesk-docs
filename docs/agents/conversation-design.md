@@ -22,7 +22,7 @@ help_key: agents.conversation_design
 
 # Conversation design
 
-**Conversation design** is *how* an agent runs the call. Vocadesk offers three modes,
+**Conversation design** is *how* an agent runs the call. callcat.ai (former vocadesk) offers three modes,
 from simplest to most powerful. You pick one per agent on the agent page.
 
 | Mode | Best for | Who can use it |

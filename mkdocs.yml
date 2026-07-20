@@ -1,10 +1,10 @@
-site_name: Vocadesk Documentation
-site_description: Guides and reference for the Vocadesk AI voice-agent platform.
+site_name: callcat.ai (former vocadesk) Documentation
+site_description: Guides and reference for the callcat.ai (former vocadesk) AI voice-agent platform.
 site_url: https://docs.vocadesk.com/
 repo_url: https://github.com/Vocadesk/vocadesk-docs
 repo_name: Vocadesk/vocadesk-docs
 edit_uri: edit/main/docs/
-copyright: © Vocadesk
+copyright: © callcat.ai (former vocadesk)
 
 theme:
   name: material
@@ -97,7 +97,7 @@ nav:
   - Settings: settings.md
   - Administration: admin.md
   - For developers:
-      - How Vocadesk works: architecture.md
+      - How callcat.ai (former vocadesk) works: architecture.md
       - Embedding on your website: embed-integration.md
   - Troubleshooting: troubleshooting.md
   - Glossary: glossary.md

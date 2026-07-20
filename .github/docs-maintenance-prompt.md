@@ -1,6 +1,6 @@
 # Docs maintenance task
 
-You are maintaining the **Vocadesk public documentation** in this repository. Your job
+You are maintaining the **callcat.ai (former vocadesk) public documentation** in this repository. Your job
 is to keep it accurate, current, and well-connected as the product evolves — then stop
 and let a human review your PR.
 

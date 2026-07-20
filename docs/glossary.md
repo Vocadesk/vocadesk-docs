@@ -1,6 +1,6 @@
 ---
 title: Glossary
-summary: One-line definitions of every Vocadesk term.
+summary: One-line definitions of every callcat.ai (former vocadesk) term.
 tags:
   - concepts
   - getting-started

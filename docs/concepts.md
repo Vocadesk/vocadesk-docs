@@ -1,6 +1,6 @@
 ---
 title: Core concepts
-summary: The objects Vocadesk is built around — operators, clients, agents, calls, phone numbers, and embeds.
+summary: The objects callcat.ai (former vocadesk) is built around — operators, clients, agents, calls, phone numbers, and embeds.
 tags:
   - getting-started
   - concepts
@@ -17,7 +17,7 @@ help_key: concepts.overview
 
 # Core concepts
 
-Everything in Vocadesk hangs off a small set of objects. Learn these once and the
+Everything in callcat.ai (former vocadesk) hangs off a small set of objects. Learn these once and the
 rest of the product makes sense.
 
 ## The hierarchy

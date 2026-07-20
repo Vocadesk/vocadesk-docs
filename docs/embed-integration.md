@@ -20,7 +20,7 @@ help_key: embeds.developer
 
 # Embedding on your website
 
-A developer reference for putting a Vocadesk [web-call button](embeds.md) on a site.
+A developer reference for putting a callcat.ai (former vocadesk) [web-call button](embeds.md) on a site.
 Create the [embed](embeds.md#creating-an-embed) in the dashboard first to get its id
 (`emb_…`) and add your site to its allowed origins.
 
@@ -111,10 +111,10 @@ element's own CSS:
 - **One call per visitor per embed** at a time — see `concurrent_call_active`.
 - **Microphone required.** The page must be served over HTTPS and the visitor must
   grant mic access.
-- **No third-party calls.** The embed only talks to Vocadesk's own endpoints — no
+- **No third-party calls.** The embed only talks to callcat.ai (former vocadesk)'s own endpoints — no
   analytics or external trackers — which keeps it safe to add to any site.
 
 ## Related
 
 - Operator-facing overview → [Web calls & embeds](embeds.md)
-- How a call flows end to end → [How Vocadesk works](architecture.md)
+- How a call flows end to end → [How callcat.ai (former vocadesk) works](architecture.md)
