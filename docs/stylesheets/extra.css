@@ -1,0 +1,40 @@
+/*
+ * callcat.ai brand palette, matching vocafront2/src/index.css:
+ *   navy   #09152D  — logo background, used for the header/nav (primary)
+ *   orange #FD6F23  — logo mark, used for links/accents
+ * Light mode deepens the orange to #C74C0A for AA text contrast on white,
+ * same reasoning vocafront2 uses for its light-mode --primary.
+ */
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #09152d;
+  --md-primary-fg-color--light: #1c3560;
+  --md-primary-fg-color--dark: #050b18;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
+
+  --md-accent-fg-color: #c74c0a;
+  --md-accent-fg-color--transparent: rgba(199, 76, 10, 0.1);
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
+
+  /* Material defaults content links to --md-primary-fg-color (navy here, reserved
+     for the header/nav); the app uses orange for links/actions, so point links
+     at accent instead. */
+  --md-typeset-a-color: var(--md-accent-fg-color);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #09152d;
+  --md-primary-fg-color--light: #1c3560;
+  --md-primary-fg-color--dark: #050b18;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
+
+  --md-accent-fg-color: #fd6f23;
+  --md-accent-fg-color--transparent: rgba(253, 111, 35, 0.1);
+  --md-accent-bg-color: #09152d;
+  --md-accent-bg-color--light: rgba(9, 21, 45, 0.7);
+
+  --md-typeset-a-color: var(--md-accent-fg-color);
+}
