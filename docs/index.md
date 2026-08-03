@@ -4,7 +4,7 @@ summary: What callcat.ai (former vocadesk) is, who it's for, and how this docume
 tags:
   - getting-started
 keywords:
-  - vocadesk
+  - callcat.ai
   - overview
   - ai voice agent
   - documentation
