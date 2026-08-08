@@ -7,6 +7,10 @@ export default {
     const originRequest = new Request(url, request);
     originRequest.headers.set("Host", "cdn.vocadesk.com");
 
-    return fetch(originRequest);
+    // cacheTtl: 0 - never let Cloudflare's edge cache a response from here.
+    // GitHub Pages has its own propagation delay after a release publishes;
+    // without this, a 404 hit during that window gets cached for hours,
+    // blocking every customer loading a brand-new versioned bundle.
+    return fetch(originRequest, { cf: { cacheTtl: 0, cacheEverything: false } });
   },
 };
