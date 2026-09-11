@@ -86,6 +86,10 @@ an `active` client **one** free week:
   or from now if it has already ended) or **void** it early. A week whose cap is already
   reached can't be extended.
 
+When a free week reaches **90% of its cap**, the operator's contact email and the
+platform team get one warning email, and the client shows an amber "almost used up"
+note on its Info tab and in the clients list.
+
 Waived minutes never count against the plan's included bundle or overage. They show
 on the Billing tab and as an informational line on the invoice. Because calls are
 metered once a day, the "waived so far" figure lags by up to a day.
