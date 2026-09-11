@@ -67,6 +67,11 @@ Each client carries a subscription [plan](billing.md) that sets how many
 per-minute pricing. When a client hits a limit, the relevant **New** action is
 disabled with a notice — upgrade the client's plan to raise it.
 
+## Free week
+
+An `active` client can be given **one** free week from its **Info** tab: 7 days of
+calls at no charge, up to a cap. See [Billing → Free weeks](billing.md#free-weeks).
+
 ## What's next
 
 - Add an agent for the client → [Agents](agents/index.md)

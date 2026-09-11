@@ -46,6 +46,10 @@ Super-admins administer the platform itself, not just one workspace:
   is the editable layer on top of the default plan templates.
 - **Impersonate an operator.** To support or troubleshoot, a super-admin can view a
   specific operator's workspace as if inside it, scoped to that operator's data.
+- **Free-week packages.** From the operator row's menu, set how many
+  [free weeks](billing.md#free-weeks) an operator may give its clients (default 5) and
+  the cap per week (platform default 10 in the operator's currency), see the weeks
+  already given, and void one early.
 
 !!! note "Currency is set at approval"
     An operator's billing currency is chosen when it's approved, before any billing

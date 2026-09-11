@@ -70,6 +70,23 @@ The **Billing** tab shows, per period:
 
 All amounts are shown in each client's currency.
 
+## Free weeks
+
+Each operator has a small number of **free-week packages** (5 by default; a
+super-admin can change this per operator). From a client's **Info** tab you can give
+an `active` client **one** free week:
+
+- it starts the moment you give it and ends **exactly 7 days later**, used or not;
+- calls placed in that window are **not charged**, until the waived usage reaches the
+  cap (10 in your billing currency by default, e.g. £10 / $10; a super-admin can set a
+  different cap for your operator). The call that crosses the cap is split, and later
+  calls bill normally;
+- a client can only ever receive **one** free week, and it can't be taken back.
+
+Waived minutes never count against the plan's included bundle or overage. They show
+on the Billing tab and as an informational line on the invoice. Because calls are
+metered once a day, the "waived so far" figure lags by up to a day.
+
 ## Usage & reconciliation
 
 Completed calls are metered into the current billing cycle automatically. The figures
