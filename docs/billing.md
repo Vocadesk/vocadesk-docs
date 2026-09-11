@@ -81,7 +81,10 @@ an `active` client **one** free week:
   cap (10 in your billing currency by default, e.g. £10 / $10; a super-admin can set a
   different cap for your operator). The call that crosses the cap is split, and later
   calls bill normally;
-- a client can only ever receive **one** free week, and it can't be taken back.
+- a client can only ever receive **one** free week, and it can't be taken back;
+- only a super-admin can **extend** a free week (by 7 days at a time, from its current end,
+  or from now if it has already ended) or **void** it early. A week whose cap is already
+  reached can't be extended.
 
 Waived minutes never count against the plan's included bundle or overage. They show
 on the Billing tab and as an informational line on the invoice. Because calls are
