@@ -1,6 +1,6 @@
-# callcat.ai (former vocadesk) Documentation
+# callcat.ai Documentation
 
-Public docs for the callcat.ai (former vocadesk) platform, built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+Public docs for the callcat.ai platform, built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 and deployed to GitHub Pages on every push to `main`.
 
 **Live:** https://vocadesk.github.io/vocadesk-docs/

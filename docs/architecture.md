@@ -1,5 +1,5 @@
 ---
-title: How callcat.ai (former vocadesk) works
+title: How callcat.ai works
 summary: A developer-level overview of the platform's services and how a call flows through them.
 tags:
   - architecture
@@ -16,14 +16,14 @@ keywords:
 help_key: architecture.overview
 ---
 
-# How callcat.ai (former vocadesk) works
+# How callcat.ai works
 
 A high-level look at the moving parts, for developers and the technically curious.
 This describes the *shape* of the system — not its internal configuration.
 
 ## Services
 
-callcat.ai (former vocadesk) is a set of focused services rather than one monolith:
+callcat.ai is a set of focused services rather than one monolith:
 
 | Service | Role |
 |---|---|
@@ -78,4 +78,4 @@ button put a live agent on any website. See [Web calls & embeds](embeds.md).
 
 !!! note "This is the public overview"
     Operational details — deployment, secrets, and internal runbooks — live in
-    callcat.ai (former vocadesk)'s private engineering docs, not here.
+    callcat.ai's private engineering docs, not here.

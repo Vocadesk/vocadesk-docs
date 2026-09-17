@@ -1,6 +1,6 @@
 ---
 title: Getting started
-summary: From signing in to your first live call — the fastest path through callcat.ai (former vocadesk).
+summary: From signing in to your first live call — the fastest path through callcat.ai.
 tags:
   - getting-started
   - agents

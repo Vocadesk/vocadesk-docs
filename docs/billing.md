@@ -22,7 +22,7 @@ help_key: billing.overview
 
 # Billing
 
-callcat.ai (former vocadesk) bills **per minute** against a **subscription plan** on each
+callcat.ai bills **per minute** against a **subscription plan** on each
 [client](clients.md). This page is the operator-facing view of how charges are made
 up.
 

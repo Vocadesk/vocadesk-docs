@@ -1,4 +1,4 @@
-"""Build-time hooks for the Vocadesk docs.
+"""Build-time hooks for the callcat.ai docs.
 
 Two jobs, both driven off page frontmatter so they stay correct as content grows:
 
@@ -134,7 +134,7 @@ def on_post_build(config):
         json.dump(_HELP_MAP, fh, indent=2, ensure_ascii=False, sort_keys=True)
 
     base = (config.get("site_url") or "").rstrip("/")
-    out = ["# Vocadesk Documentation", "",
+    out = ["# callcat.ai Documentation", "",
            "> Machine-readable page index for help-chat / RAG agents.", ""]
     for src, meta in sorted(_PAGE_META.items()):
         if src == "tags.md":
