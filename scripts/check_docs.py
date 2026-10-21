@@ -5,7 +5,7 @@ Run locally (`python scripts/check_docs.py`) or in CI before the build. Enforces
 
   * every content page has `title`, `summary`, and at least one `tag`
     (these drive search, related links, help-map, and llms.txt);
-  * `help_key` values are unique (each in-product Help button maps to one page);
+  * `help_key` / `help_keys` values are unique (each in-product Help button key maps to one page);
 
 and warns (non-fatally) about pages that share no tag with any other page, since
 those get no auto-generated "Related" links.
@@ -73,6 +73,11 @@ def main() -> int:
         hk = fm.get("help_key")
         if hk:
             help_keys[str(hk)].append(rel)
+        extra = fm.get("help_keys") or []
+        if isinstance(extra, str):
+            extra = [extra]
+        for k in extra:
+            help_keys[str(k)].append(rel)
 
     for key, pages in sorted(help_keys.items()):
         if len(pages) > 1:

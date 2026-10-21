@@ -42,6 +42,15 @@ For example: *If the caller has an urgent maintenance issue, transfer to
 - You can add several rules; the agent transfers on the first one whose condition is
   met in full.
 
+### Switches for forwarding {#forwarding-switches}
+
+- **Enable call forwarding** is the master switch. While it is **off**, the agent
+  never transfers, whatever rules you have written. The rules stay saved.
+- Each rule also has its own switch. A rule that is **off** is skipped, so you can
+  pause one number without deleting the rule.
+- Turn forwarding on only when the numbers are real people who will pick up. A
+  transfer ends the agent's part of the call.
+
 ## Forward triggers (Questions & conditions)
 
 In [scenario mode](conversation-design.md#questions-conditions-scenario), add a

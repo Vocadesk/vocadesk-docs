@@ -16,6 +16,10 @@ keywords:
   - impersonation
   - restricted features
 help_key: admin.overview
+help_keys:
+  - admin.hebrew_enabled
+  - admin.order_taking_enabled
+  - admin.decision_tree_enabled
 ---
 
 # Administration & roles
@@ -54,6 +58,31 @@ Super-admins administer the platform itself, not just one workspace:
 !!! note "Currency is set at approval"
     An operator's billing currency is chosen when it's approved, before any billing
     exists. Everything defaults to GBP. See [Billing](billing.md).
+
+## Operator feature switches {#operator-switches}
+
+Three features are off for every new operator. A super-admin turns each one on per
+operator, in the **Super Admin dashboard** (one switch per operator in the table).
+Regular users and admins cannot change them. Turning a switch off later hides the
+feature again but does not delete anything already built.
+
+### Hebrew {#hebrew-enabled}
+
+Lets the operator pick **Hebrew agent personas** and use the dashboard in Hebrew.
+Hebrew agents that already exist keep working whether the switch is on or off. The
+same switch is on the operator's own Settings page, visible to super-admins only.
+
+### Order taking {#order-taking-enabled}
+
+Shows the **Catalog / product info** and **Order taking** cards in the agent page for
+that operator. See [Catalog & order taking](agents/catalog-and-orders.md). Without
+this switch an operator cannot add a menu or let an agent take orders.
+
+### Decision tree {#decision-tree-enabled}
+
+Adds the **Decision tree** mode to the
+[conversation design](agents/conversation-design.md#decision-tree-advanced) switcher
+for every agent of that operator. Use it for fully scripted calls.
 
 ## Restricted features
 

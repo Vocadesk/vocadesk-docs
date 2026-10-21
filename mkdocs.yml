@@ -92,6 +92,8 @@ nav:
       - Voices & languages: agents/voices.md
       - Conversation design: agents/conversation-design.md
       - Call forwarding & transfers: agents/call-forwarding.md
+      - Catalog & order taking: agents/catalog-and-orders.md
+      - Advanced agent switches: agents/advanced-switches.md
       - Testing your agent: agents/testing.md
   - Phone numbers: phone-numbers.md
   - Web calls & embeds: embeds.md

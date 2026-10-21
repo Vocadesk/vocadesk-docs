@@ -68,6 +68,12 @@ immediately — even mid-intake — instead of finishing every standard question
     Vague conditions ("the caller needs help") make the agent fire triggers at the
     wrong time, or miss them. Be concrete about what the caller says or wants.
 
+### Turning a trigger off {#trigger-switch}
+
+Each trigger has an on/off switch. A trigger that is **off** is ignored on calls and
+its details are folded away, but it stays in your list. Use it to pause a rule
+(for example a seasonal offer) without losing the wording.
+
 Forwarding is just an action on a trigger here — see
 [Call forwarding & transfers](call-forwarding.md) for how that behaves.
 
@@ -81,6 +87,15 @@ control over every branch.
 Decision tree suits complex, highly-regulated, or heavily-scripted call flows. A
 super admin must enable it for your operator before it appears in the mode
 switcher below.
+
+### Required steps {#required-step}
+
+A **collect** step has a **Required** box. When it is ticked, the agent must get that
+answer before it moves on. If the caller hesitates or declines, the agent explains why
+it is needed and asks again, patiently. You can write that explanation in the
+**insist** box; if you leave it empty the agent makes a short one up. Only if the
+caller firmly refuses after several tries does the agent give up on that step.
+When the box is not ticked, the agent tries about twice, then moves on if the caller can't or won't answer.
 
 ## Switching modes
 

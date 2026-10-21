@@ -70,6 +70,7 @@ def on_files(files, config):
             "tags": tags,
             "keywords": _as_list(fm.get("keywords")),
             "help_key": fm.get("help_key"),
+            "help_keys": _as_list(fm.get("help_keys")),
         }
         _PAGE_META[f.src_uri] = meta
         for tag in tags:
@@ -116,12 +117,16 @@ def on_page_content(html, page, config, files):
     """Collect Help-button keys with their resolved (canonical) URLs."""
     meta = _PAGE_META.get(page.file.src_uri) or {}
     help_key = page.meta.get("help_key") or meta.get("help_key")
-    if help_key:
-        _HELP_MAP[str(help_key)] = {
-            "url": page.canonical_url or page.abs_url or page.url,
-            "title": page.title,
-            "summary": page.meta.get("summary") or meta.get("summary") or "",
-        }
+    # `help_keys` = extra keys that open this same page (a section is then reached
+    # with the Help button's `anchor`), e.g. one key per switch on a settings page.
+    extra_keys = _as_list(page.meta.get("help_keys")) or meta.get("help_keys") or []
+    entry = {
+        "url": page.canonical_url or page.abs_url or page.url,
+        "title": page.title,
+        "summary": page.meta.get("summary") or meta.get("summary") or "",
+    }
+    for key in ([help_key] if help_key else []) + list(extra_keys):
+        _HELP_MAP[str(key)] = dict(entry)
     return html
 
 

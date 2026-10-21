@@ -47,6 +47,13 @@ Each call captures:
 - **Outcome** — whether it completed normally, was transferred to a human, or ended
   early.
 
+### Transcript text direction {#transcript-direction}
+
+For agents in a right-to-left language (such as Hebrew) the transcript opens
+right-to-left. A small switch above the transcript flips it to left-to-right, for
+example when a call is mostly English. It only changes how this window shows the text;
+the call and its stored transcript are not changed.
+
 ## Post-call analysis
 
 Shortly after a call ends, callcat.ai adds an automatic analysis:

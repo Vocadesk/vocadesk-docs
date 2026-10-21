@@ -86,6 +86,10 @@ an `active` client **one** free week:
   or from now if it has already ended) or **void** it early. A week whose cap is already
   reached can't be extended.
 
+A super-admin sets the allowance and the cap from the operator's **Free weeks**
+settings. The **Use the default cap** box keeps the platform cap (10 in the operator's
+currency). Untick it to type a different cap for that operator only.
+
 When a free week reaches **90% of its cap**, the operator's contact email and the
 platform team get one warning email, and the client shows an amber "almost used up"
 note on its Info tab and in the clients list.

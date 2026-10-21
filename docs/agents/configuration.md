@@ -16,6 +16,8 @@ keywords:
   - intake questions
   - data collection
 help_key: agents.configuration
+help_keys:
+  - agents.hebrew_text_fix
 ---
 
 # Configuring an agent
@@ -83,6 +85,26 @@ and validates answers as they're given (for example, reading an email address ba
 phonetically to confirm spelling).
 
 Reorder questions by dragging them; the order is the order they're asked.
+
+### Switching a question off {#question-switch}
+
+Each question has an on/off switch. A question that is **off** stays in your list but
+the agent does not ask it, so you can pause a question and bring it back later
+without retyping it. Questions are on by default.
+
+## Auto-fix English words written in Hebrew {#hebrew-text-fix}
+
+This switch shows only on agents whose language is Hebrew. It is **on** by default.
+
+People often type English names and terms in Hebrew letters, for example
+"וורקאאוט" for "workout". The voice would then read them the Hebrew way. With the
+switch on, each time you save, the system rewrites those words into proper English in
+your greeting, persona, knowledge base and questions. The result is what the agent
+says on the call.
+
+- Turn it **off** if you want the text kept exactly as you typed it.
+- It runs when you save, not during a call, so it does not slow a call down.
+- It only changes words that are phonetic English; normal Hebrew is left alone.
 
 ## Saving
 
