@@ -40,6 +40,12 @@ becomes the agent's avatar.
 The **Voice audio manager** lets you listen to the available voices side by side, so
 you can settle on the right tone for your audience before configuring an agent.
 
+## How the agent reads back spelled details
+
+When a caller spells a name or email, or gives a phone number, the agent can read it
+back using pre-recorded letters and digits in the same voice. See
+[Readback clips](readback-clips.md).
+
 ## Language behavior
 
 The agent conducts the whole call in its configured language — greeting, questions,

@@ -90,6 +90,7 @@ nav:
       - agents/index.md
       - Configuring an agent: agents/configuration.md
       - Voices & languages: agents/voices.md
+      - Readback clips: agents/readback-clips.md
       - Conversation design: agents/conversation-design.md
       - Call forwarding & transfers: agents/call-forwarding.md
       - Catalog & order taking: agents/catalog-and-orders.md
