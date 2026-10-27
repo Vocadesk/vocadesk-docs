@@ -1,0 +1,56 @@
+# Build and publish the docs site (replaces .github/workflows/deploy.yml, 27 Oct 2026).
+# Trigger: push to main, project vocadesk-492716. Serves https://docs.vocadesk.com.
+#
+# The old workflow deployed with actions/deploy-pages, which only works inside GitHub Actions
+# (OIDC). Cloud Build publishes the built `site/` to the `gh-pages` branch instead, and GitHub
+# Pages serves that branch (same scheme as embed-sdk -> cdn.vocadesk.com).
+# ONE-TIME OWNER STEPS: create the secret `github-pages-token` (below), then switch Pages to
+# branch mode:  gh api -X PUT repos/Vocadesk/vocadesk-docs/pages -f build_type=legacy -f source[branch]=gh-pages -f source[path]=/
+#
+# `github-pages-token` is a fine-grained GitHub token with Contents: read/write on this repo;
+# the build service account needs roles/secretmanager.secretAccessor on it.
+steps:
+  - id: build
+    name: python:3.12
+    entrypoint: bash
+    args:
+      - -ec
+      - |
+        pip install -q -r requirements.txt
+        python scripts/check_docs.py
+        mkdocs build
+
+  - id: publish
+    name: python:3.12
+    entrypoint: bash
+    waitFor: ['build']
+    secretEnv: ['GH_TOKEN']
+    args:
+      - -ec
+      - |
+        AUTH="AUTHORIZATION: basic $$(printf 'x-access-token:%s' "$$GH_TOKEN" | base64 -w0)"
+        DIR="$$(mktemp -d)"
+        if git -c http.extraheader="$$AUTH" clone -q --depth 1 --branch gh-pages https://github.com/Vocadesk/vocadesk-docs.git "$$DIR" 2>/dev/null; then
+          echo "updating existing gh-pages"
+        else
+          echo "creating gh-pages"
+          git -C "$$DIR" init -q -b gh-pages
+          git -C "$$DIR" remote add origin https://github.com/Vocadesk/vocadesk-docs.git
+        fi
+        find "$$DIR" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+        cp -a site/. "$$DIR"/
+        echo "docs.vocadesk.com" > "$$DIR/CNAME"
+        touch "$$DIR/.nojekyll"
+        cd "$$DIR"
+        git config user.name "Cloud Build"
+        git config user.email "cloudbuild@users.noreply.github.com"
+        git add -A
+        git commit -q -m "Publish docs (${COMMIT_SHA})" || { echo "nothing to commit"; exit 0; }
+        git -c http.extraheader="$$AUTH" push -q origin gh-pages
+availableSecrets:
+  secretManager:
+    - versionName: projects/$PROJECT_ID/secrets/github-pages-token/versions/latest
+      env: GH_TOKEN
+options:
+  logging: CLOUD_LOGGING_ONLY
+timeout: 900s

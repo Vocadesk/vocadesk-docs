@@ -1,0 +1,15 @@
+# Docs check: every branch push except main, and pull requests. Same steps as the build job
+# of the former .github/workflows/deploy.yml (Python 3.12): frontmatter validation + mkdocs build.
+steps:
+  - id: docs
+    name: python:3.12
+    entrypoint: bash
+    args:
+      - -ec
+      - |
+        pip install -q -r requirements.txt
+        python scripts/check_docs.py
+        mkdocs build
+options:
+  logging: CLOUD_LOGGING_ONLY
+timeout: 900s
