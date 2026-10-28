@@ -1,0 +1,177 @@
+{
+  "accounts.overview": {
+    "summary": "How you sign in, what the first-run onboarding sets up, and how to invite your team.",
+    "title": "Accounts & onboarding",
+    "url": "https://docs.callcat.ai/accounts/"
+  },
+  "admin.decision_tree_enabled": {
+    "summary": "What admins and super-admins can do — roles, operator approval, plan pricing, impersonation, and restricted features.",
+    "title": "Administration",
+    "url": "https://docs.callcat.ai/admin/"
+  },
+  "admin.hebrew_enabled": {
+    "summary": "What admins and super-admins can do — roles, operator approval, plan pricing, impersonation, and restricted features.",
+    "title": "Administration",
+    "url": "https://docs.callcat.ai/admin/"
+  },
+  "admin.order_taking_enabled": {
+    "summary": "What admins and super-admins can do — roles, operator approval, plan pricing, impersonation, and restricted features.",
+    "title": "Administration",
+    "url": "https://docs.callcat.ai/admin/"
+  },
+  "admin.overview": {
+    "summary": "What admins and super-admins can do — roles, operator approval, plan pricing, impersonation, and restricted features.",
+    "title": "Administration",
+    "url": "https://docs.callcat.ai/admin/"
+  },
+  "agents.addon_required": {
+    "summary": "Let an agent answer questions about your products and take orders, and what each catalog switch does.",
+    "title": "Catalog & order taking",
+    "url": "https://docs.callcat.ai/agents/catalog-and-orders/"
+  },
+  "agents.advanced_switches": {
+    "summary": "Per-agent super-admin switches that change how the agent collects and speaks back spelled details and the next question.",
+    "title": "Advanced agent switches",
+    "url": "https://docs.callcat.ai/agents/advanced-switches/"
+  },
+  "agents.ask_quantity": {
+    "summary": "Let an agent answer questions about your products and take orders, and what each catalog switch does.",
+    "title": "Catalog & order taking",
+    "url": "https://docs.callcat.ai/agents/catalog-and-orders/"
+  },
+  "agents.call_forwarding": {
+    "summary": "Set the conditions under which an agent hands a call to a human, and understand exactly how the transfer behaves.",
+    "title": "Call forwarding & transfers",
+    "url": "https://docs.callcat.ai/agents/call-forwarding/"
+  },
+  "agents.catalog": {
+    "summary": "Let an agent answer questions about your products and take orders, and what each catalog switch does.",
+    "title": "Catalog & order taking",
+    "url": "https://docs.callcat.ai/agents/catalog-and-orders/"
+  },
+  "agents.configuration": {
+    "summary": "Set an agent's persona, voice, language, greeting, knowledge base, and intake questions.",
+    "title": "Configuring an agent",
+    "url": "https://docs.callcat.ai/agents/configuration/"
+  },
+  "agents.conversation_design": {
+    "summary": "Choose how an agent runs a call — simple intake, Questions & conditions (scenario), or a Decision tree.",
+    "title": "Conversation design",
+    "url": "https://docs.callcat.ai/agents/conversation-design/"
+  },
+  "agents.derive_email_spelling": {
+    "summary": "Per-agent super-admin switches that change how the agent collects and speaks back spelled details and the next question.",
+    "title": "Advanced agent switches",
+    "url": "https://docs.callcat.ai/agents/advanced-switches/"
+  },
+  "agents.dictation_mode": {
+    "summary": "Per-agent super-admin switches that change how the agent collects and speaks back spelled details and the next question.",
+    "title": "Advanced agent switches",
+    "url": "https://docs.callcat.ai/agents/advanced-switches/"
+  },
+  "agents.hebrew_text_fix": {
+    "summary": "Set an agent's persona, voice, language, greeting, knowledge base, and intake questions.",
+    "title": "Configuring an agent",
+    "url": "https://docs.callcat.ai/agents/configuration/"
+  },
+  "agents.item_available": {
+    "summary": "Let an agent answer questions about your products and take orders, and what each catalog switch does.",
+    "title": "Catalog & order taking",
+    "url": "https://docs.callcat.ai/agents/catalog-and-orders/"
+  },
+  "agents.order_taking": {
+    "summary": "Let an agent answer questions about your products and take orders, and what each catalog switch does.",
+    "title": "Catalog & order taking",
+    "url": "https://docs.callcat.ai/agents/catalog-and-orders/"
+  },
+  "agents.overview": {
+    "summary": "What an agent is and the three things you configure — who it is, how it converses, and when it transfers.",
+    "title": "Agents",
+    "url": "https://docs.callcat.ai/agents/"
+  },
+  "agents.runtime_next_question": {
+    "summary": "Per-agent super-admin switches that change how the agent collects and speaks back spelled details and the next question.",
+    "title": "Advanced agent switches",
+    "url": "https://docs.callcat.ai/agents/advanced-switches/"
+  },
+  "agents.show_prices": {
+    "summary": "Let an agent answer questions about your products and take orders, and what each catalog switch does.",
+    "title": "Catalog & order taking",
+    "url": "https://docs.callcat.ai/agents/catalog-and-orders/"
+  },
+  "agents.testing": {
+    "summary": "Talk to an agent from your browser before going live — what test calls do, the modes available, and what to check.",
+    "title": "Testing your agent",
+    "url": "https://docs.callcat.ai/agents/testing/"
+  },
+  "agents.tuned_spelling": {
+    "summary": "Per-agent super-admin switches that change how the agent collects and speaks back spelled details and the next question.",
+    "title": "Advanced agent switches",
+    "url": "https://docs.callcat.ai/agents/advanced-switches/"
+  },
+  "agents.voices": {
+    "summary": "Choose how your agent sounds, preview voices, and understand language support.",
+    "title": "Voices & languages",
+    "url": "https://docs.callcat.ai/agents/voices/"
+  },
+  "architecture.overview": {
+    "summary": "A developer-level overview of the platform's services and how a call flows through them.",
+    "title": "How callcat.ai works",
+    "url": "https://docs.callcat.ai/architecture/"
+  },
+  "billing.overview": {
+    "summary": "How plans, per-minute pricing, usage, and invoices work for your clients.",
+    "title": "Billing",
+    "url": "https://docs.callcat.ai/billing/"
+  },
+  "calls.overview": {
+    "summary": "Review every conversation — transcripts, recordings, summaries, sentiment, and the data the agent captured.",
+    "title": "Calls",
+    "url": "https://docs.callcat.ai/calls/"
+  },
+  "clients.overview": {
+    "summary": "Create and manage the end-customers whose calls your agents handle.",
+    "title": "Clients",
+    "url": "https://docs.callcat.ai/clients/"
+  },
+  "concepts.overview": {
+    "summary": "The objects callcat.ai is built around — operators, clients, agents, calls, phone numbers, and embeds.",
+    "title": "Core concepts",
+    "url": "https://docs.callcat.ai/concepts/"
+  },
+  "embeds.developer": {
+    "summary": "Developer reference for installing the web-call button — script tag, events, error codes, theming, and programmatic mounting.",
+    "title": "Embedding on your website",
+    "url": "https://docs.callcat.ai/embed-integration/"
+  },
+  "embeds.overview": {
+    "summary": "Let website visitors talk to an agent from a button — create an embed, set its origins, and install the snippet.",
+    "title": "Web calls & embeds",
+    "url": "https://docs.callcat.ai/embeds/"
+  },
+  "getting_started": {
+    "summary": "From signing in to your first live call — the fastest path through callcat.ai.",
+    "title": "Getting started",
+    "url": "https://docs.callcat.ai/getting-started/"
+  },
+  "glossary": {
+    "summary": "One-line definitions of every callcat.ai term.",
+    "title": "Glossary",
+    "url": "https://docs.callcat.ai/glossary/"
+  },
+  "phone_numbers.overview": {
+    "summary": "Attach a phone number to an agent so inbound calls are answered automatically.",
+    "title": "Phone numbers",
+    "url": "https://docs.callcat.ai/phone-numbers/"
+  },
+  "settings.overview": {
+    "summary": "Operator-wide options — your business profile, team members, and call-summary emails.",
+    "title": "Settings",
+    "url": "https://docs.callcat.ai/settings/"
+  },
+  "troubleshooting": {
+    "summary": "Common issues with agents, calls, and embeds — and how to fix them.",
+    "title": "Troubleshooting",
+    "url": "https://docs.callcat.ai/troubleshooting/"
+  }
+}

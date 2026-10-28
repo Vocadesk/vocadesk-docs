@@ -1,0 +1,27 @@
+# callcat.ai Documentation
+
+> Machine-readable page index for help-chat / RAG agents.
+
+- [Accounts, sign-in & onboarding](https://docs.callcat.ai/accounts/): How you sign in, what the first-run onboarding sets up, and how to invite your team. (tags: getting-started, accounts, settings, team)
+- [Administration & roles](https://docs.callcat.ai/admin/): What admins and super-admins can do — roles, operator approval, plan pricing, impersonation, and restricted features. (tags: administration, settings, team, billing)
+- [Advanced agent switches (super-admin)](https://docs.callcat.ai/agents/advanced-switches/): Per-agent super-admin switches that change how the agent collects and speaks back spelled details and the next question. (tags: agents, configuration, dictation, admin)
+- [Call forwarding & transfers](https://docs.callcat.ai/agents/call-forwarding/): Set the conditions under which an agent hands a call to a human, and understand exactly how the transfer behaves. (tags: agents, forwarding, conversation-design, scenario, calls)
+- [Catalog & order taking](https://docs.callcat.ai/agents/catalog-and-orders/): Let an agent answer questions about your products and take orders, and what each catalog switch does. (tags: agents, catalog, orders, configuration)
+- [Configuring an agent](https://docs.callcat.ai/agents/configuration/): Set an agent's persona, voice, language, greeting, knowledge base, and intake questions. (tags: agents, configuration, voice, knowledge-base, questions)
+- [Conversation design](https://docs.callcat.ai/agents/conversation-design/): Choose how an agent runs a call — simple intake, Questions & conditions (scenario), or a Decision tree. (tags: agents, conversation-design, scenario, decision-tree, questions, forwarding)
+- [Agents](https://docs.callcat.ai/agents/): What an agent is and the three things you configure — who it is, how it converses, and when it transfers. (tags: agents, getting-started)
+- [Testing your agent](https://docs.callcat.ai/agents/testing/): Talk to an agent from your browser before going live — what test calls do, the modes available, and what to check. (tags: agents, testing, calls, getting-started)
+- [Voices & languages](https://docs.callcat.ai/agents/voices/): Choose how your agent sounds, preview voices, and understand language support. (tags: agents, configuration, voice, voices, languages)
+- [How callcat.ai works](https://docs.callcat.ai/architecture/): A developer-level overview of the platform's services and how a call flows through them. (tags: architecture, developers, calls, integrations)
+- [Billing](https://docs.callcat.ai/billing/): How plans, per-minute pricing, usage, and invoices work for your clients. (tags: billing, plans, usage, invoices, clients)
+- [Calls](https://docs.callcat.ai/calls/): Review every conversation — transcripts, recordings, summaries, sentiment, and the data the agent captured. (tags: calls, transcripts, recordings, analysis)
+- [Clients](https://docs.callcat.ai/clients/): Create and manage the end-customers whose calls your agents handle. (tags: clients, getting-started, billing)
+- [Core concepts](https://docs.callcat.ai/concepts/): The objects callcat.ai is built around — operators, clients, agents, calls, phone numbers, and embeds. (tags: getting-started, concepts)
+- [Embedding on your website](https://docs.callcat.ai/embed-integration/): Developer reference for installing the web-call button — script tag, events, error codes, theming, and programmatic mounting. (tags: embeds, web-calls, integrations, developers)
+- [Web calls & embeds](https://docs.callcat.ai/embeds/): Let website visitors talk to an agent from a button — create an embed, set its origins, and install the snippet. (tags: embeds, web-calls, agents, integrations)
+- [Getting started](https://docs.callcat.ai/getting-started/): From signing in to your first live call — the fastest path through callcat.ai. (tags: getting-started, agents, clients, calls)
+- [Glossary](https://docs.callcat.ai/glossary/): One-line definitions of every callcat.ai term. (tags: concepts, getting-started)
+- [callcat.ai Documentation](https://docs.callcat.ai/): What callcat.ai is, who it's for, and how this documentation is organized. (tags: getting-started)
+- [Phone numbers](https://docs.callcat.ai/phone-numbers/): Attach a phone number to an agent so inbound calls are answered automatically. (tags: phone-numbers, agents, calls)
+- [Settings](https://docs.callcat.ai/settings/): Operator-wide options — your business profile, team members, and call-summary emails. (tags: settings, team, getting-started)
+- [Troubleshooting](https://docs.callcat.ai/troubleshooting/): Common issues with agents, calls, and embeds — and how to fix them. (tags: troubleshooting, agents, calls, embeds)
