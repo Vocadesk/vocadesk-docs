@@ -1,0 +1,35 @@
+# Deploy the callcat.ai Cloudflare Worker proxies (replaces
+# .github/workflows/deploy-cloudflare-proxy.yml, 27 Oct 2026). Trigger: push to main touching
+# cloudflare/docs-proxy/**, cloudflare/embed-cdn-proxy/** or this file; project vocadesk-492716.
+#
+# docs.callcat.ai and embed-cdn.callcat.ai are Worker routes (callcat.ai zone) forwarding to
+# docs.vocadesk.com and cdn.vocadesk.com. embed-cdn-proxy lives here (not in embed-sdk, its
+# logical owner) because this repo's Cloudflare token is the one with Workers deploy permission.
+#
+# Secrets (Secret Manager, project of the build): `cloudflare-api-token` (needs Workers Scripts:Edit
+# and Zone Workers Routes:Edit on callcat.ai) and `cloudflare-account-id`. The build service
+# account needs roles/secretmanager.secretAccessor on both.
+steps:
+  - id: docs-proxy
+    name: node:22
+    dir: cloudflare/docs-proxy
+    entrypoint: npx
+    args: ['--yes', 'wrangler@4.154.0', 'deploy']
+    secretEnv: ['CLOUDFLARE_API_TOKEN', 'CLOUDFLARE_ACCOUNT_ID']
+    waitFor: ['-']
+  - id: embed-cdn-proxy
+    name: node:22
+    dir: cloudflare/embed-cdn-proxy
+    entrypoint: npx
+    args: ['--yes', 'wrangler@4.154.0', 'deploy']
+    secretEnv: ['CLOUDFLARE_API_TOKEN', 'CLOUDFLARE_ACCOUNT_ID']
+    waitFor: ['-']
+availableSecrets:
+  secretManager:
+    - versionName: projects/$PROJECT_ID/secrets/cloudflare-api-token/versions/latest
+      env: CLOUDFLARE_API_TOKEN
+    - versionName: projects/$PROJECT_ID/secrets/cloudflare-account-id/versions/latest
+      env: CLOUDFLARE_ACCOUNT_ID
+options:
+  logging: CLOUD_LOGGING_ONLY
+timeout: 600s
