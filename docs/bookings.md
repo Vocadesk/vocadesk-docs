@@ -98,6 +98,10 @@ phone only when its business, practitioner and appointment type are all enabled 
 booking and it is no longer than the appointment type's length. Any other appointment can be
 cancelled by phone, but moving it means taking a message for the clinic.
 
+The card also shows a rough **booking flows per minute** estimate: how many bookings the
+connection can handle at once within Cliniko's rate limit. It is an estimate, not a
+guarantee, and the limit is shared with any other software using the same Cliniko user.
+
 If online booking is switched off in Cliniko altogether, no appointment can be moved by
 phone.
 
@@ -183,6 +187,7 @@ Pick the Cliniko business or businesses the agent may act for, then turn the swi
 
 The switch is refused, with the reason shown under the agent, unless:
 
+- the agent is **enabled** (a disabled agent is greyed out and can't take bookings);
 - Cliniko is connected and verified;
 - the agent runs in **scenario mode** and its language is **English**;
 - at least one business is chosen, every chosen business is **online-bookable**, and the
