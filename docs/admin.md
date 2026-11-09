@@ -20,6 +20,7 @@ help_keys:
   - admin.hebrew_enabled
   - admin.order_taking_enabled
   - admin.decision_tree_enabled
+  - admin.bookings_enabled
 ---
 
 # Administration & roles
@@ -61,7 +62,7 @@ Super-admins administer the platform itself, not just one workspace:
 
 ## Operator feature switches {#operator-switches}
 
-Three features are off for every new operator. A super-admin turns each one on per
+Four features are off for every new operator. A super-admin turns each one on per
 operator, in the **Super Admin dashboard** (one switch per operator in the table).
 Regular users and admins cannot change them. Turning a switch off later hides the
 feature again but does not delete anything already built.
@@ -83,6 +84,16 @@ this switch an operator cannot add a menu or let an agent take orders.
 Adds the **Decision tree** mode to the
 [conversation design](agents/conversation-design.md#decision-tree-advanced) switcher
 for every agent of that operator. Use it for fully scripted calls.
+
+### Bookings {#bookings-enabled}
+
+Shows the **Bookings** tab on every [client](clients.md) of that operator, where an admin
+connects Cliniko and lets agents move and cancel appointments by phone. See
+[Appointment bookings](bookings.md). While the switch is off, operator admins don't see
+the tab at all (super-admins still do, with a banner, but can't connect or save
+settings). The switch is checked on every booking request, so turning it off stops
+bookings for that operator's agents straight away, even mid-call. Nothing is deleted:
+turn it back on and the connection and settings are as they were.
 
 ## Restricted features
 

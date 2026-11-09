@@ -75,4 +75,5 @@ calls at no charge, up to a cap. See [Billing → Free weeks](billing.md#free-we
 ## What's next
 
 - Add an agent for the client → [Agents](agents/index.md)
+- Let agents move and cancel Cliniko appointments → [Appointment bookings](bookings.md)
 - Understand pricing and usage → [Billing](billing.md)

@@ -97,6 +97,7 @@ nav:
       - Testing your agent: agents/testing.md
   - Phone numbers: phone-numbers.md
   - Web calls & embeds: embeds.md
+  - Appointment bookings: bookings.md
   - Calls: calls.md
   - Billing: billing.md
   - Settings: settings.md
