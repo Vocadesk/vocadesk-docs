@@ -14,6 +14,7 @@
 - [Voices & languages](https://docs.callcat.ai/agents/voices/): Choose how your agent sounds, preview voices, and understand language support. (tags: agents, configuration, voice, voices, languages)
 - [How callcat.ai works](https://docs.callcat.ai/architecture/): A developer-level overview of the platform's services and how a call flows through them. (tags: architecture, developers, calls, integrations)
 - [Billing](https://docs.callcat.ai/billing/): How plans, per-minute pricing, usage, and invoices work for your clients. (tags: billing, plans, usage, invoices, clients)
+- [Appointment bookings (Cliniko)](https://docs.callcat.ai/bookings/): Let an agent move or cancel a caller's appointment in Cliniko during the call, and control how callers are verified, what is kept and which agents can do it. (tags: bookings, clients, agents, integrations, settings)
 - [Calls](https://docs.callcat.ai/calls/): Review every conversation — transcripts, recordings, summaries, sentiment, and the data the agent captured. (tags: calls, transcripts, recordings, analysis)
 - [Clients](https://docs.callcat.ai/clients/): Create and manage the end-customers whose calls your agents handle. (tags: clients, getting-started, billing)
 - [Core concepts](https://docs.callcat.ai/concepts/): The objects callcat.ai is built around — operators, clients, agents, calls, phone numbers, and embeds. (tags: getting-started, concepts)

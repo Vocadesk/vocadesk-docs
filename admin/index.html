@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -742,6 +742,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../bookings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appointment bookings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../calls/" class="md-nav__link">
         
   
@@ -949,6 +976,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#bookings-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bookings
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1021,10 +1059,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
         
           
-          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="">
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="">
             
   
   
@@ -1042,8 +1080,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1290,6 +1328,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#bookings-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bookings
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1430,7 +1479,7 @@ progressively more.</p>
 exists. Everything defaults to GBP. See <a href="../billing/">Billing</a>.</p>
 </div>
 <h2 id="operator-switches">Operator feature switches<a class="headerlink" href="#operator-switches" title="Link to this section">&para;</a></h2>
-<p>Three features are off for every new operator. A super-admin turns each one on per
+<p>Four features are off for every new operator. A super-admin turns each one on per
 operator, in the <strong>Super Admin dashboard</strong> (one switch per operator in the table).
 Regular users and admins cannot change them. Turning a switch off later hides the
 feature again but does not delete anything already built.</p>
@@ -1446,6 +1495,14 @@ this switch an operator cannot add a menu or let an agent take orders.</p>
 <p>Adds the <strong>Decision tree</strong> mode to the
 <a href="../agents/conversation-design/#decision-tree-advanced">conversation design</a> switcher
 for every agent of that operator. Use it for fully scripted calls.</p>
+<h3 id="bookings-enabled">Bookings<a class="headerlink" href="#bookings-enabled" title="Link to this section">&para;</a></h3>
+<p>Shows the <strong>Bookings</strong> tab on every <a href="../clients/">client</a> of that operator, where an admin
+connects Cliniko and lets agents move and cancel appointments by phone. See
+<a href="../bookings/">Appointment bookings</a>. While the switch is off, operator admins don't see
+the tab at all (super-admins still do, with a banner, but can't connect or save
+settings). The switch is checked on every booking request, so turning it off stops
+bookings for that operator's agents straight away, even mid-call. Nothing is deleted:
+turn it back on and the connection and settings are as they were.</p>
 <h2 id="restricted-features">Restricted features<a class="headerlink" href="#restricted-features" title="Link to this section">&para;</a></h2>
 <p>A few capabilities are limited to super-admins:</p>
 <ul>
@@ -1465,6 +1522,7 @@ for every agent of that operator. Use it for fully scripted calls.</p>
 <li><a href="../accounts/">Accounts, sign-in &amp; onboarding</a> — How you sign in, what the first-run onboarding sets up, and how to invite your team.</li>
 <li><a href="../settings/">Settings</a> — Operator-wide options — your business profile, team members, and call-summary emails.</li>
 <li><a href="../billing/">Billing</a> — How plans, per-minute pricing, usage, and invoices work for your clients.</li>
+<li><a href="../bookings/">Appointment bookings (Cliniko)</a> — Let an agent move or cancel a caller's appointment in Cliniko during the call, and control how callers are verified, what is kept and which agents can do it.</li>
 <li><a href="../clients/">Clients</a> — Create and manage the end-customers whose calls your agents handle.</li>
 </ul>
 
@@ -1550,7 +1608,7 @@ for every agent of that operator. Use it for fully scripted calls.</p>
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.sections", "navigation.indexes", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tooltips"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>
