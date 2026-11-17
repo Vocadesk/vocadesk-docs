@@ -131,67 +131,67 @@
   },
   "bookings.after_change": {
     "summary": "Let an agent move or cancel a caller's appointment in Cliniko during the call, and control how callers are verified, what is kept and which agents can do it.",
-    "title": "Appointment bookings",
+    "title": "Appointment bookings (Cliniko)",
     "url": "https://docs.callcat.ai/bookings/"
   },
   "bookings.agent_switch": {
     "summary": "Let an agent move or cancel a caller's appointment in Cliniko during the call, and control how callers are verified, what is kept and which agents can do it.",
-    "title": "Appointment bookings",
+    "title": "Appointment bookings (Cliniko)",
     "url": "https://docs.callcat.ai/bookings/"
   },
   "bookings.audit": {
     "summary": "Let an agent move or cancel a caller's appointment in Cliniko during the call, and control how callers are verified, what is kept and which agents can do it.",
-    "title": "Appointment bookings",
+    "title": "Appointment bookings (Cliniko)",
     "url": "https://docs.callcat.ai/bookings/"
   },
   "bookings.businesses": {
     "summary": "Let an agent move or cancel a caller's appointment in Cliniko during the call, and control how callers are verified, what is kept and which agents can do it.",
-    "title": "Appointment bookings",
+    "title": "Appointment bookings (Cliniko)",
     "url": "https://docs.callcat.ai/bookings/"
   },
   "bookings.cancellation_notice": {
     "summary": "Let an agent move or cancel a caller's appointment in Cliniko during the call, and control how callers are verified, what is kept and which agents can do it.",
-    "title": "Appointment bookings",
+    "title": "Appointment bookings (Cliniko)",
     "url": "https://docs.callcat.ai/bookings/"
   },
   "bookings.connection": {
     "summary": "Let an agent move or cancel a caller's appointment in Cliniko during the call, and control how callers are verified, what is kept and which agents can do it.",
-    "title": "Appointment bookings",
+    "title": "Appointment bookings (Cliniko)",
     "url": "https://docs.callcat.ai/bookings/"
   },
   "bookings.daily_cap": {
     "summary": "Let an agent move or cancel a caller's appointment in Cliniko during the call, and control how callers are verified, what is kept and which agents can do it.",
-    "title": "Appointment bookings",
+    "title": "Appointment bookings (Cliniko)",
     "url": "https://docs.callcat.ai/bookings/"
   },
   "bookings.no_caller_id": {
     "summary": "Let an agent move or cancel a caller's appointment in Cliniko during the call, and control how callers are verified, what is kept and which agents can do it.",
-    "title": "Appointment bookings",
+    "title": "Appointment bookings (Cliniko)",
     "url": "https://docs.callcat.ai/bookings/"
   },
   "bookings.overview": {
     "summary": "Let an agent move or cancel a caller's appointment in Cliniko during the call, and control how callers are verified, what is kept and which agents can do it.",
-    "title": "Appointment bookings",
+    "title": "Appointment bookings (Cliniko)",
     "url": "https://docs.callcat.ai/bookings/"
   },
   "bookings.patient_notice": {
     "summary": "Let an agent move or cancel a caller's appointment in Cliniko during the call, and control how callers are verified, what is kept and which agents can do it.",
-    "title": "Appointment bookings",
+    "title": "Appointment bookings (Cliniko)",
     "url": "https://docs.callcat.ai/bookings/"
   },
   "bookings.retention": {
     "summary": "Let an agent move or cancel a caller's appointment in Cliniko during the call, and control how callers are verified, what is kept and which agents can do it.",
-    "title": "Appointment bookings",
+    "title": "Appointment bookings (Cliniko)",
     "url": "https://docs.callcat.ai/bookings/"
   },
   "bookings.unknown_number": {
     "summary": "Let an agent move or cancel a caller's appointment in Cliniko during the call, and control how callers are verified, what is kept and which agents can do it.",
-    "title": "Appointment bookings",
+    "title": "Appointment bookings (Cliniko)",
     "url": "https://docs.callcat.ai/bookings/"
   },
   "bookings.verification": {
     "summary": "Let an agent move or cancel a caller's appointment in Cliniko during the call, and control how callers are verified, what is kept and which agents can do it.",
-    "title": "Appointment bookings",
+    "title": "Appointment bookings (Cliniko)",
     "url": "https://docs.callcat.ai/bookings/"
   },
   "calls.overview": {
