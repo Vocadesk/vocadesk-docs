@@ -89,7 +89,7 @@ for every agent of that operator. Use it for fully scripted calls.
 
 Shows the **Bookings** tab on every [client](clients.md) of that operator, where an admin
 connects Cliniko and lets agents move and cancel appointments by phone. See
-[Appointment bookings](bookings.md). While the switch is off, operator admins don't see
+[Appointment bookings](bookings/index.md). While the switch is off, operator admins don't see
 the tab at all (super-admins still do, with a banner, but can't connect or save
 settings). The switch is checked on every booking request, so turning it off stops
 bookings for that operator's agents straight away, even mid-call. Nothing is deleted:
