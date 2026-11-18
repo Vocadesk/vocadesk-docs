@@ -107,7 +107,8 @@ was undone, or if Cliniko holds no email address for the patient.
 - **From**: the operator's summary-email sender, or `no-reply@callcat.ai`.
 - **Subject**: "Your appointment has been moved - *clinic name*" or "Your appointment has
   been cancelled - *clinic name*".
-- **Body**: "Your appointment with Dana has been moved from Tuesday 12 November at 2:30 pm
+- **Body**: "Hello *first name*," (the patient's preferred first name in Cliniko, else
+  their first name; "Hello," if Cliniko has neither), then "Your appointment with Dana has been moved from Tuesday 12 November at 2:30 pm
   to **Friday 15 November at 10:00 am**." (or "…on *time* has been cancelled."), then
   "This was arranged by phone. If this is not right, please contact *clinic name*."
 

@@ -163,8 +163,8 @@ What happens next follows [After a change](index.md#after-change):
 
 - **Carry on with the intake questions** (default): the agent goes on with the agent's
   next unanswered question.
-- **Close with a booking line**: the agent asks whether there is anything else, and if
-  not, ends the call with the booking line before the goodbye.
+- **Close with a booking line**: the agent reads out the change once, asks whether there
+  is anything else, and if not, says a plain goodbye. The change isn't repeated at the end.
 
 If the caller changes their mind after a change, the agent takes a message for the
 clinic; it doesn't undo the change itself. If [Email to the patient](index.md#patient-notice)
