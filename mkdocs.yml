@@ -4,7 +4,7 @@ site_url: https://docs.callcat.ai/
 repo_url: https://github.com/Vocadesk/vocadesk-docs
 repo_name: Vocadesk/vocadesk-docs
 edit_uri: edit/main/docs/
-copyright: © callcat.ai
+copyright: © callcat.ai &nbsp;·&nbsp; <a href="#__consent">Cookie settings</a>
 
 theme:
   name: material
@@ -76,6 +76,22 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra:
+  # Cookie banner (Material's built-in consent): Accept / Reject / Manage on first
+  # visit, choice remembered in the `__consent` cookie for 12 months, reopened from
+  # the "Cookie settings" link in the footer. Add analytics via extra.analytics
+  # only — Material loads it only after the visitor accepts.
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to make these docs work and, with your permission, to
+      understand how they are used so we can improve them. You can accept all,
+      reject non-essential cookies, or manage your settings.
+    cookies:
+      analytics: Analytics
+    actions:
+      - accept
+      - reject
+      - manage
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Vocadesk
